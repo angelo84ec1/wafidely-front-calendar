@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gimnasios",
+  "info": {
+    "name": "Gimnasio"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Ruc": {
+      "type": "string"
+    },
+    "Direccion": {
+      "type": "string"
+    },
+    "Cliente": {
+      "type": "string"
+    }
+  }
+}

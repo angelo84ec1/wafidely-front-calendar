@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/datos-personales",
+      "handler": "datos-personales.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/datos-personales/count",
+      "handler": "datos-personales.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/datos-personales/:id",
+      "handler": "datos-personales.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/datos-personales",
+      "handler": "datos-personales.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/datos-personales/:id",
+      "handler": "datos-personales.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/datos-personales/:id",
+      "handler": "datos-personales.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

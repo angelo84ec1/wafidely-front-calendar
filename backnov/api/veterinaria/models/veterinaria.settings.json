@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "veterinarias",
+  "info": {
+    "name": "Veterinaria"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Ciudad": {
+      "type": "string"
+    },
+    "Pais": {
+      "type": "string"
+    },
+    "Telefono": {
+      "type": "string"
+    },
+    "Paciente": {
+      "type": "string"
+    },
+    "Foto": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Edad": {
+      "type": "string"
+    },
+    "Cumpleanos": {
+      "type": "string"
+    }
+  }
+}

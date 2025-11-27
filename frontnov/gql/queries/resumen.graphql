@@ -1,0 +1,106 @@
+query getResumenData($id: ID!) {
+  user(id: $id) {
+    email
+    username
+    Estado
+    datos_personale {
+      Nombres
+      Apellidos
+      foto {
+        url
+      }
+      Estatus
+      Correo
+      Cedula_Ruc
+      Pasaporte
+      Fecha_nacimiento
+      Pais
+      Jubilacion
+      Carga_Civil
+      Discapacidad
+      Telefono_Convencional
+      Tipo_de_Servicio
+      Fecha_de_Ingreso_a_la_Organizacion
+      Coordinador
+      Convenio_Compensacion
+      Pagare
+      Acta_Compromiso_Pago
+      Valor_Cheque
+      Valor_del_Contrato
+      Acta_de_Finiquito
+      Contrato_de_Privado_de_Gestion_e_Intermediacion
+      Bono_Eficiencia_Cumplimiento
+      Declaracion_Jurada
+      Banco_Cooperativa
+      Tipo_de_Cuenta
+      Numero_de_Cuenta
+      Banco_Cooperativa2
+      Tipo_de_Cuenta2
+      Numero_de_Cuenta2
+      Banco_Cooperativa3
+      Tipo_de_Cuenta3
+      Numero_de_Cuenta3
+      Beneficiario1
+      Cedula_Beneficiario1
+      Beneficiario2
+      Cedula_Beneficiario2
+      Beneficiario3
+      Cedula_Beneficiario3
+      acta_confidencialidad
+      desempeno_organizacion
+      grupo_anticipo
+      anticipo
+      valor_servicios_profesionales
+      bonos_por_pagar
+    }
+    config_pago {
+      id
+      Tipo_de_Pago
+      Numero_de_Transferencia
+      Pago_desde_Extranjero
+      Transferencia_desde_el_Extranjero
+      Transferencia_al_Extranjero
+      Penalisaciones_Sanciones
+      Comisiones
+    }
+    solicitudes {
+      id
+      Tipo_de_Solicitud
+      Numero_del_caso
+      Nueva_Solicitud_de_Compromisos_de_Contratacion
+    }
+  }
+}
+
+query getUserPaymentConfig($id: ID!) {
+  user(id: $id) {
+    config_pago {
+      Tipo_de_Pago
+      Numero_de_Transferencia
+      Pago_desde_Extranjero
+      pago_al_extranjero
+      Transferencia_desde_el_Extranjero
+      Transferencia_al_Extranjero
+      Penalisaciones_Sanciones
+      Comisiones
+      Numero_de_Cuenta_Pago1
+      porcentaje_cancelaciones
+    }
+  }
+}
+
+query getLastSolicitud($id: ID!) {
+  solicitudes(
+    limit: 1
+    sort: "createdAt:DESC"
+    where: { user_eq: $id }
+  ) {
+    Tipo_de_Solicitud
+    Numero_del_caso
+    tipo_de_proyecto
+    user {
+      id
+    }
+  }
+}
+

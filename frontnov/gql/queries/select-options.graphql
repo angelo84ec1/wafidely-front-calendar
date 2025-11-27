@@ -1,0 +1,56 @@
+query getOptionsSelectDefault {
+  tipoDeSangres {
+    Tipo_de_sangre
+  }
+  nacionalidads {
+    Nacionalidad
+  }
+  estadoCivils {
+    nombre
+  }
+  tipoDeProyectos {
+    nombre
+  }
+  tipoDeServicios {
+    nombre
+  }
+  profesiones {
+    nombre
+  }
+  ocupaciones {
+    nombre
+  }
+  paises {
+    nombre
+  }
+  declaracionesJuradas {
+    nombre
+  }
+  tipoCuentas {
+    Tipo
+  }
+  bancos {
+    Nombre
+  }
+  tipoCuentas {
+    Tipo
+  }
+  ciudades {
+    nombre
+  }
+  corregimientos {
+    nombre
+  }
+  provincias {
+    nombre
+  }
+  parentescos {
+    nombre
+  }
+}
+
+query getTipoSolicitudes {
+  tipoSolicitudes {
+    nombre
+  }
+}

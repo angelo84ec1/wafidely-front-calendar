@@ -1,0 +1,190 @@
+:root {
+  --heading-1: 3rem;
+  --heading-2: 2.1rem;
+  --heading-3: 1.5rem;
+  --heading-4: 1.2rem;
+  --heading-line-height: 1.1;
+
+  --green-500: #232c4d;
+  --green-400: hsl(179, 45%, 45%);
+  --green-50: #f1f8f8;
+
+  --gray-900: #111827;
+  --gray-800: #1f2937;
+  --gray-700: #374151;
+  --gray-200: #e5e7eb;
+  --gray-100: #f3f4f6;
+  --gray-50: #fafafa;
+  --gray-500: #6b7280;
+
+  --success: #38f5b3;
+  --success-50: #e9f6ee;
+  --danger: #f31414;
+  --blue: #38f5b3;
+
+  --links: #38f5b3;
+
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Poppins',  sans-serif;;
+  color: var(--gray-800);
+
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+h1 {
+  font-size: var(--heading-1);
+}
+
+h2 {
+  font-size: var(--heading-2);
+}
+
+h3 {
+  font-size: var(--heading-3);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--gray-900);
+  line-height: var(--heading-line-height);
+}
+
+label {
+  color: var(--gray-900);
+}
+
+p,
+input,
+select {
+  color: var(--gray-800);
+}
+
+input,
+select {
+  color: var(--gray-800);
+  background-color: var(--white);
+  border: 1px solid var(--gray-500);
+}
+:where(input, select, textarea):not(:disabled):focus {
+  outline: 1px solid var(--green-500);
+  outline-offset: 0.2rem;
+}
+
+input:disabled,
+select:disabled {
+  color: var(--gray-800);
+  background-color: var(--gray-200);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  height: 2.5rem;
+  padding: 0 0.5rem;
+}
+
+button:hover {
+  
+  opacity: 0.8;
+}
+
+select {
+  height: 2.5rem;
+  padding: 0 0.5rem;
+}
+
+@media (max-width: 450px) {
+  :root {
+    --heading-1: 2rem;
+    --heading-2: 1.6rem;
+    --heading-3: 1.4rem;
+    --heading-4: 1.2rem;
+  }
+  button {
+    font-size: 0.8rem;
+    height: 2.25rem;
+  }
+  a {
+    font-size: 0.8rem;
+  }
+}

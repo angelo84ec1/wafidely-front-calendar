@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clinicas",
+  "info": {
+    "name": "Clinica"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Historia": {
+      "type": "string"
+    },
+    "Nombres": {
+      "type": "string"
+    },
+    "Apellidos": {
+      "type": "string"
+    },
+    "Direccion": {
+      "type": "string"
+    },
+    "Foto": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

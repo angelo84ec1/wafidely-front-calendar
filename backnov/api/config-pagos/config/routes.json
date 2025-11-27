@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/config-pagos",
+      "handler": "config-pagos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/config-pagos/count",
+      "handler": "config-pagos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/config-pagos/:id",
+      "handler": "config-pagos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/config-pagos",
+      "handler": "config-pagos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/config-pagos/:id",
+      "handler": "config-pagos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/config-pagos/:id",
+      "handler": "config-pagos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

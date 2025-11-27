@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "datos_personales",
+  "info": {
+    "name": "Datos personales",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "foto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "nombres": {
+      "type": "string"
+    },
+    "apellidos": {
+      "type": "string"
+    },
+    "compania": {
+      "type": "string"
+    },
+    "cedula_ruc": {
+      "type": "biginteger"
+    },
+    "cedula": {
+      "type": "biginteger"
+    },
+    "pasaporte": {
+      "type": "string"
+    },
+    "fecha_inicio": {
+      "type": "date",
+      "default": "2002-08-01T05:00:00.000Z",
+      "required": true
+    },
+    "nacionalidad": {
+      "type": "string"
+    },
+    "estado_civil": {
+      "type": "string"
+    },
+    "celular": {
+      "type": "biginteger"
+    },
+    "telefono_convencional": {
+      "type": "biginteger"
+    },
+    "correo": {
+      "type": "email"
+    },
+    "fecha_fin": {
+      "type": "date"
+    },
+    "pais": {
+      "type": "string"
+    },
+    "ciudad": {
+      "type": "string"
+    },
+    "provincia": {
+      "type": "string"
+    },
+    "tipo_persona": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    }
+  }
+}

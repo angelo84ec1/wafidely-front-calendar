@@ -1,0 +1,133 @@
+/* assets/css/calendar-custom.css */
+
+/* Ocultar header original */
+.meeting-selector__header {
+  display: none !important;
+}
+
+/* TABS DE DÍAS - COLORES VIBRANTES */
+.meeting-selector .tab__days {
+  display: flex;
+  gap: 8px;
+  padding: 16px 12px;
+  background: white;
+  border-radius: 12px;
+}
+
+.meeting-selector .tab__day {
+  flex: 1;
+  min-width: 90px;
+  padding: 16px 12px;
+  border-radius: 12px;
+  border: 2px solid #E5E7EB;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.meeting-selector .tab__day:nth-child(1) {
+  background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+  border-color: #F59E0B;
+  color: #92400E;
+}
+
+.meeting-selector .tab__day:nth-child(2) {
+  background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%);
+  border-color: #3B82F6;
+  color: #1E40AF;
+}
+
+.meeting-selector .tab__day:nth-child(3) {
+  background: linear-gradient(135deg, #FCE7F3 0%, #FBCFE8 100%);
+  border-color: #EC4899;
+  color: #9F1239;
+}
+
+.meeting-selector .tab__day:nth-child(4) {
+  background: linear-gradient(135deg, #D1FAE5 0%, #A7F3D0 100%);
+  border-color: #10B981;
+  color: #065F46;
+}
+
+.meeting-selector .tab__day:nth-child(5) {
+  background: linear-gradient(135deg, #E0E7FF 0%, #C7D2FE 100%);
+  border-color: #6366F1;
+  color: #3730A3;
+}
+
+.meeting-selector .tab__day:nth-child(6) {
+  background: linear-gradient(135deg, #FED7AA 0%, #FDBA74 100%);
+  border-color: #F97316;
+  color: #9A3412;
+}
+
+.meeting-selector .tab__day:nth-child(7) {
+  background: linear-gradient(135deg, #E9D5FF 0%, #D8B4FE 100%);
+  border-color: #A855F7;
+  color: #6B21A8;
+}
+
+.meeting-selector .tab__day:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.meeting-selector .tab__day--active {
+  background: linear-gradient(135deg, #4F46E5 0%, #4338CA 100%) !important;
+  border-color: #4F46E5 !important;
+  color: white !important;
+  font-weight: 600;
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(79, 70, 229, 0.4);
+}
+
+/* FLECHAS MODERNAS */
+.meeting-selector .tab__pagination__button {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #4F46E5 0%, #4338CA 100%);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+  margin: 0 !important;
+}
+
+.meeting-selector .tab__pagination__button:hover:not(:disabled) {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.5);
+}
+
+.meeting-selector .tab__pagination__button:disabled {
+  opacity: 0.4;
+  background: #9CA3AF;
+}
+
+/* SLOTS DE HORARIO */
+.meeting-selector .meeting__button {
+  background: white;
+  border: 2px solid #E5E7EB;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin: 6px 0;
+  font-weight: 500;
+  color: #111827;
+  transition: all 0.2s ease;
+}
+
+.meeting-selector .meeting__button:hover {
+  border-color: #4F46E5;
+  background: #EEF2FF;
+  color: #4F46E5;
+  transform: scale(1.02);
+}
+
+.meeting-selector .meeting__button--selected {
+  background: linear-gradient(135deg, #4F46E5 0%, #4338CA 100%) !important;
+  border-color: #4F46E5 !important;
+  color: white !important;
+}

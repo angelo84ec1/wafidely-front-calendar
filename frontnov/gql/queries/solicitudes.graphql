@@ -1,0 +1,42 @@
+query getSolicitudesByUserId($id: String) {
+  solicitudes(where: { user: $id }) {
+    id
+    Titulo_de_Caso
+    Creacion
+    Resolucion
+    Estado
+    Descripcion
+    Numero_del_caso
+  }
+}
+
+
+query optionsNewRequest {
+  titulosDeCasos {
+    nombre
+  }
+  prioridadesDePeticions {
+    nombre
+  }
+  encuestaDeSolicitudAAplicars {
+    nombre
+  }
+  paises {
+    nombre
+  }
+  ciudades {
+    nombre
+  }
+  nuevaSolicitudDeCompromisosDeContratacions {
+    nombre
+  }
+}
+
+mutation createNewRequest($payload: createSolicitudeInput) {
+  createNewRequest(payload: $payload) {
+    solicitude {
+      id
+      Numero_del_caso
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/clinicas",
+      "handler": "clinica.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clinicas/count",
+      "handler": "clinica.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clinicas/:id",
+      "handler": "clinica.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clinicas",
+      "handler": "clinica.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/clinicas/:id",
+      "handler": "clinica.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/clinicas/:id",
+      "handler": "clinica.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/veterinarias",
+      "handler": "veterinaria.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/veterinarias/count",
+      "handler": "veterinaria.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/veterinarias/:id",
+      "handler": "veterinaria.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/veterinarias",
+      "handler": "veterinaria.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/veterinarias/:id",
+      "handler": "veterinaria.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/veterinarias/:id",
+      "handler": "veterinaria.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

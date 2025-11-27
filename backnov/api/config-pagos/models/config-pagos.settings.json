@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "config-pagos",
+  "info": {
+    "name": "Configuracion pagos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "descuento": {
+      "type": "decimal"
+    },
+    "producto": {
+      "type": "string"
+    },
+    "fecha_compra": {
+      "type": "date"
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "pais": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "respapi1": {
+      "type": "string"
+    },
+    "respapi2": {
+      "type": "string"
+    },
+    "establecimiento": {
+      "model": "establecimientos"
+    },
+    "fecha_fin": {
+      "type": "date"
+    },
+    "tipo_tarjeta": {
+      "type": "string"
+    },
+    "user": {
+      "via": "configuracion_pago",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "fecha_nacimiento": {
+      "type": "date"
+    }
+  }
+}

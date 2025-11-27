@@ -1,0 +1,13 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/notificaciones/enviar",
+      "handler": "notificaciones.enviar",
+      "config": {
+        "description": "Enviar notificacion al correo",
+        "policies": []
+      }
+    }
+  ]
+}

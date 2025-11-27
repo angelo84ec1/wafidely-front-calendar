@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bots",
+  "info": {
+    "name": "Bot"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Fecha": {
+      "type": "string"
+    }
+  }
+}

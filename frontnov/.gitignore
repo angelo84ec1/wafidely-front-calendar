@@ -1,0 +1,54 @@
+# Dependencies
+**/node_modules/
+node_modules/
+
+# Nuxt.js
+**/.nuxt/
+.nuxt/
+**/.output/
+.output/
+**/dist/
+**/.cache/
+
+# Python
+**/__pycache__/
+__pycache__/
+*.py[cod]
+*.pyc
+**/venv/
+**/myenv/
+venv/
+myenv/
+
+# Django
+*.log
+**/db.sqlite3
+db.sqlite3
+**/staticfiles/
+**/media/
+
+# Environment variables - CRÍTICO
+**/.env
+**/.env.*
+**/*.env
+.env
+.env.*
+*.env
+.env.local
+.env.production
+.env.development
+
+# Build files
+**/*.pack
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backups
+**/backups-db/

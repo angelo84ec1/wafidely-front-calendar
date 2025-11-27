@@ -1,0 +1,129 @@
+query getUser($id: ID!) {
+  user(id: $id) {
+    id
+    datos_personale {
+      id
+      user {
+        id
+        username
+      }
+      foto {
+        url
+      }
+      Estatus
+      Nombres
+      Apellidos
+      Compania
+      Categoria
+      Cedula_Ruc
+      Pasaporte
+      Fecha_nacimiento
+      Sexo
+      Discapacidad
+      Jubilacion
+      tipo_de_sangre
+      Nacionalidad
+      Estado_Civil
+      Carga_Civil
+      Celular
+      Telefono_Convencional
+      Correo
+      Correo_Alternativo
+      Coordinador
+      Cedula_Coordinador
+      Tipo_de_Proyecto
+      Tipo_de_Servicio
+      Ocupacion
+      Profesion
+      Fecha_de_Ingreso_a_la_Organizacion
+      Pais
+      Ciudad
+      Corregimiento
+      Provincia
+      Departamento
+      Canton
+      Domicilio1
+      Domicilio2
+      Casa
+      Pasaje
+      Codigo_Postal
+      Valor_del_Contrato
+      Valor_Adendum
+      Valor_Cheque
+      Acta_de_Adelanto
+      Acta_de_Finiquito
+      Acta_Compromiso_Pago
+      Contrato_de_Privado_de_Gestion_e_Intermediacion
+      Pagare
+      Valor_letra_de_Cambio
+      Bono_Eficiencia_Cumplimiento
+      Convenio_Compensacion
+      Certificado_de_Garantia_y_Depositos
+      Numero_del_Contrato
+      Declaracion_Jurada
+      Numero_de_Cuenta
+      Banco_Cooperativa
+      Tipo_de_Cuenta
+      Numero_de_Cuenta2
+      Banco_Cooperativa2
+      Tipo_de_Cuenta2
+      Numero_de_Cuenta3
+      Banco_Cooperativa3
+      Tipo_de_Cuenta3
+      Beneficiario1
+      Cedula_Beneficiario1
+      Pasaporte_Beneficiario1
+      Nacimiento_Beneficiario1
+      Nacionalidad_Beneficiario1
+      Sexo_Beneficiario1
+      Parentezco_Beneficiario1
+      Edad_Beneficiario1
+      Celular_Beneficiario1
+      Telefono_Convencional_Beneficiario1
+      Email_Beneficiario1
+      Domicilio_Beneficiario1
+      Beneficiario2
+      Cedula_Beneficiario2
+      Pasaporte_Beneficiario2
+      Nacimiento_Beneficiario2
+      Nacionalidad_Beneficiario2
+      Sexo_Beneficiario2
+      Parentezco_Beneficiario2
+      Edad_Beneficiario2
+      Celular_Beneficiario2
+      Telefono_Convencional_Beneficiario2
+      Email_Beneficiario2
+      Domicilio_Beneficiario2
+      Beneficiario3
+      Cedula_Beneficiario3
+      Pasaporte_Beneficiario3
+      Nacimiento_Beneficiario3
+      Nacionalidad_Beneficiario3
+      Sexo_Beneficiario3
+      Parentezco_Beneficiario3
+      Edad_Beneficiario3
+      Celular_Beneficiario3
+      Telefono_Convencional_Beneficiario3
+      Email_Beneficiario3
+      Domicilio_Beneficiario3
+    }
+  }
+}
+
+mutation uploadProfilePicture($file: Upload!, $info: FileInfoInput) {
+  upload(file: $file, info: $info) {
+    id
+  }
+}
+
+mutation uploadDocument($file: Upload!, $info: FileInfoInput) {
+  upload(file: $file, info: $info) {
+    id
+  }
+}
+
+mutation uploadDocuments($files: [Upload]!) {
+  multipleUpload(files: $files) {
+    id
+  }
+}

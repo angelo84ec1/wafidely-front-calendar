@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "citas",
+  "info": {
+    "name": "Citas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "whatsapp": {
+      "type": "text"
+    },
+    "email": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "numbersend": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "confirm": {
+      "type": "string"
+    },
+    "cancel": {
+      "type": "string"
+    },
+    "picture": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "hour": {
+      "type": "string"
+    },
+    "establecimientos": {
+      "via": "citas",
+      "collection": "establecimientos",
+      "dominant": true
+    },
+    "source": {
+      "type": "enumeration",
+      "enum": [
+        "local",
+        "google"
+      ]
+    },
+    "reminderSent": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

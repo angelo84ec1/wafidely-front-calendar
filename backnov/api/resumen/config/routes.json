@@ -1,0 +1,22 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/resumen/download",
+      "handler": "resumen.download",
+      "config": {
+        "description": "Descarga el resumen de la cuenta",
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/resumen/send-email",
+      "handler": "resumen.sendEmail",
+      "config": {
+        "description": "Envia el resumen de la cuenta por email",
+        "policies": []
+      }
+    }
+  ]
+}

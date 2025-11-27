@@ -1,0 +1,172 @@
+{
+  "kind": "collectionType",
+  "collectionName": "establecimientos",
+  "info": {
+    "name": "Establecimientos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "ruc": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "string"
+    },
+    "fechainicio": {
+      "type": "date"
+    },
+    "fechafin": {
+      "type": "date"
+    },
+    "logo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "banner": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "categoria": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "numerocontacto": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "string"
+    },
+    "formulario": {
+      "type": "string"
+    },
+    "servicios": {
+      "type": "string"
+    },
+    "googlemaps": {
+      "type": "text"
+    },
+    "activateLanding": {
+      "type": "boolean"
+    },
+    "titulodescripcion1": {
+      "type": "string"
+    },
+    "titulodescripcion2": {
+      "type": "string"
+    },
+    "titulodescripcion3": {
+      "type": "string"
+    },
+    "detalledescripcion1": {
+      "type": "text"
+    },
+    "detalledescripcion2": {
+      "type": "text"
+    },
+    "detalledescripcion3": {
+      "type": "text"
+    },
+    "titulodescripcion4": {
+      "type": "string"
+    },
+    "titulodescripcion5": {
+      "type": "string"
+    },
+    "detalledescripcion4": {
+      "type": "text"
+    },
+    "detalledescripcion5": {
+      "type": "text"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "tiktok": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    },
+    "googlemaps2": {
+      "type": "text"
+    },
+    "titulogooglemaps": {
+      "type": "text"
+    },
+    "direccion1": {
+      "type": "text"
+    },
+    "description1Url": {
+      "type": "text"
+    },
+    "description2Url": {
+      "type": "text"
+    },
+    "description3Url": {
+      "type": "text"
+    },
+    "description4Url": {
+      "type": "text"
+    },
+    "description5Url": {
+      "type": "text"
+    },
+    "totalsend": {
+      "type": "string"
+    },
+    "citas": {
+      "via": "establecimientos",
+      "collection": "citas"
+    },
+    "googleRefreshToken": {
+      "type": "richtext",
+      "private": false
+    },
+    "googleCalendarEmail": {
+      "type": "email"
+    },
+    "googleCalendarSyncEnabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "urlbusiness": {
+      "type": "text"
+    },
+    "configuracionHorarios": {
+      "type": "json"
+    }
+  }
+}

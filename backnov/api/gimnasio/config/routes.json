@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/gimnasios",
+      "handler": "gimnasio.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/gimnasios/count",
+      "handler": "gimnasio.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/gimnasios/:id",
+      "handler": "gimnasio.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/gimnasios",
+      "handler": "gimnasio.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/gimnasios/:id",
+      "handler": "gimnasio.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/gimnasios/:id",
+      "handler": "gimnasio.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

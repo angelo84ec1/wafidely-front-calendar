@@ -1,0 +1,70 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/establecimientos",
+      "handler": "establecimientos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/establecimientos/count",
+      "handler": "establecimientos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/establecimientos/by-slug/:slug",
+      "handler": "establecimientos.findBySlug",
+      "config": {
+        "policies": [],
+        "auth": false 
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/establecimientos/check-slug/:slug",
+      "handler": "establecimientos.checkSlug",
+      "config": {
+        "policies": [],
+        "auth": false 
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/establecimientos/:id",
+      "handler": "establecimientos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/establecimientos",
+      "handler": "establecimientos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/establecimientos/:id",
+      "handler": "establecimientos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/establecimientos/:id",
+      "handler": "establecimientos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
